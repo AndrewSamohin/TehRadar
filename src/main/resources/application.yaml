@@ -1,1 +1,13 @@
-spring.application.name=tehradar
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/techradar_db
+    username: techradardb
+    password: tehradardb
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
